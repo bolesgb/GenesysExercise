@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/OwnerLookUp.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/ownerLookUp.js"></script>
+    <title>Sports List</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="/home">Sports Catalog</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/list">Sports List</a></li>
+                <li><a href="/team">Team Lookup</a></li>
+                <li><a href="/player">Player Lookup</a></li>
+                <li><a href="/coachLU">Coach Lookup</a></li>
+                <li class="active"><a href="/owner">Owner Lookup</a></li>
+                <li><a href="/stadium">Stadium Lookup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form class="filterSelectDropDown">
+            <select id="sportDopDown">
+                <option>Select a League</option>>
+            </select>
+            <select id="teamDropDown">
+                    <option>Select a Team</option>>
+                </select>
+            <button type="button" id="filterButton">Filter</button>
+        </form>
+    <form>
+    <div class="container mainList">
+        <div class="btn-group-vertical mainList" id="toAdd">
+        </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <label class="labels">Owner to Add:</label>
+            <input type="text" class="form-control textBox" id="addOwner" placeholder="Owner's Name">
+            <input type="text" class="form-control textBox" id="teamName" placeholder="Team Name">
+            <input type="text" class="form-control textBox" id="LeagueName" placeholder="League">
+            <input type="text" class="form-control textBox" id="income" placeholder="Net Worth">
+        </div>
+        <button type="submit" class="btn btn-default" id="addSubmit">Submit</button>
+        <br>
+        <br>
+        <div class="form-group">
+        <label class="labels">Update an Owner's Team:</label>
+            <input type="text" class="form-control textBox" id="updateOwnerName" placeholder="Owner's Name">
+            <input type="text" class="form-control textBox" id="updateOldTeam" placeholder="Current Team (MUST)">
+            <input type="text" class="form-control textBox" id="updateLeageName" placeholder="Leauge (Must)">
+            <input type="text" class="form-control textBox" id="updateNetWorth" placeholder="Net Worth">
+        </div>
+        <button type="submit" class="btn btn-default" id="upSubmit">Submit</button>
+        <br>
+        <br>
+        <label class="labels">Delete A Player:</label>
+        <div class="form-group">
+            <input type="text" class="form-control textBox" id="ownerToDelete" placeholder="Owner's Name">
+            <input type="text" class="form-control textBox" id="TeamToDelete" placeholder="Team Name">
+            <input type="text" class="form-control textBox" id="LeagueToDelete" placeholder="League">
+        </div>
+        <button type="submit" class="btn btn-default" id="delSubmit">Submit</button>
+    </form>
+</body>
+</html>

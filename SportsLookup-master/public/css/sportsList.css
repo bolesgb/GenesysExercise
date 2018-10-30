@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+.mainList {
+    text-align: center;
+    width: 100%;
+}
+
+.listBtn {
+    width: 100%;
+}
+
+.new {
+    color: black;
+    background-color: grey;
+    border-color: black;
+}
+
+.new:hover {
+    color: black;
+    background-color: #606060;
+    border-color: black;
+}
+
+.new:focus {
+    color: black;
+    background-color: #505050;
+    border-color: black;
+    outline: none;
+}
+
+form {
+    padding: 10px;
+}
