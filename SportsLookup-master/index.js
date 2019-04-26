@@ -5,7 +5,7 @@ const pHash = require('password-hash');
 
 const config = {
     user: 'sportsCatalogUser',
-    password: 'catalog159',
+    password: '[PASSWORD-LEFT-OUT]',
     server: 'golem.csse.rose-hulman.edu',
     database: 'sportsCatalog',
 }
